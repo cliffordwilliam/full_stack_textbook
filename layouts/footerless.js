@@ -1,0 +1,4 @@
+function footerless() {
+    navbar();
+    sidebar();
+};

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="public/default.css">
+    <script src="lib/highlight.min.js"></script>
+</head>
+<body>
+    <nav id="nav"></nav>
+    <aside id="aside"></aside>
+    <main id="main"></main>
+    <footer id="footer"></footer>
+
+    <!-- First visit, get ref to roots. -->
+    <script>
+        const navElement = document.getElementById("nav");
+        const mainElement = document.getElementById("main");
+        const asideElement = document.getElementById("aside");
+        const footerElement = document.getElementById("footer");
+    </script>
+
+    <!-- Back-end. -->
+    <script src="server/chaptersTable.js"></script>
+    <script src="server/chaptersEndpoints.js"></script>
+
+    <!-- Components. -->
+    <script src="components/sidebar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/chaptersList.js"></script>
+    
+    <!-- Layouts. -->
+    <script src="layouts/normal.js"></script>
+    <script src="layouts/footerless.js"></script>
+
+    <!-- Pages. -->
+    <script src="pages/home.js"></script>
+    <script src="pages/about.js"></script>
+    <script src="pages/detail.js"></script>
+
+    <!-- Routers. -->
+    <script src="routers/layoutRouter.js"></script>
+    <script src="routers/pageRouter.js"></script>
+
+    <!-- First visit, go to home. -->
+    <script>
+        navigateTo("home");
+    </script>
+</body>
+</html>

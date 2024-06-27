@@ -1,0 +1,93 @@
+/* Basic page styling. */
+body {
+    font-family: sans-serif;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60rem;
+    margin: 0 auto;
+    line-height: 1.75;
+    tab-size: 4;
+    color: #123;
+}
+
+button {
+    padding: .5rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+input, select {
+    display: block;
+    margin-bottom: .75rem;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0;
+}
+
+/* Main content area. */
+main {
+    flex: 1;
+    border: 1px solid #abc;
+    background-color: #fff;
+    padding: .75rem;
+}
+
+/* Footer and Navigation. */
+footer, nav {
+    flex: 1;
+    flex-basis: 100%;
+}
+
+/* Sidebar styling. */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Hide sidebar when hidden class is applied. */
+aside.hidden {
+    display: none;
+}
+
+/* Fixed sidebar for mobile. */
+@media only screen and (max-width: 600px) {
+    aside {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+
+/* Navbar title. */
+.navbar-title {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: .75rem;
+}
+
+/* Chapter button card. */
+.chapter-button {
+    text-align: left;
+    display: block;
+    width: 100%;
+    text-transform: none
+}
+
+/* Generic card styling. */
+.card {
+    border: 1px solid #abc;
+    background-color: #fff;
+    padding: .75rem;
+}
