@@ -9,7 +9,7 @@ function home() {
     homePageTitle.textContent = "Home";
 
     const homePageOpeningParagraph = document.createElement("p");
-    homePageOpeningParagraph.textContent = "Use this page to find the chapters you want to read.";
+    homePageOpeningParagraph.textContent = "Welcome, find the chapters you want to read here.";
 
     const chapterSearchLabel = document.createElement("label");
     chapterSearchLabel.htmlFor = 'chaptersSearchInput';

@@ -49,5 +49,12 @@
     <script>
         navigateTo("home");
     </script>
+
+    <!-- Prevent caching for development. -->
+    <script>
+        const script = document.createElement('script');
+        script.src = 'https://example.com/script.js?' + new Date().getTime(); // Append timestamp
+        document.head.appendChild(script);
+    </script>
 </body>
 </html>
