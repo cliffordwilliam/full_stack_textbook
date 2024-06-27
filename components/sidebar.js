@@ -18,7 +18,10 @@ function sidebar() {
     buttons.forEach(button => {
         const buttonElement = document.createElement("button");
         buttonElement.textContent = button.name;
-        buttonElement.addEventListener("click", () => navigateTo(button.name));
+        buttonElement.addEventListener("click", () => {
+            asideElement.classList.add("hidden");
+            navigateTo(button.name)
+        });
         sidebarContainer.appendChild(buttonElement);
     });
 
