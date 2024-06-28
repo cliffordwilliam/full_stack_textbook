@@ -67,12 +67,17 @@ main {
     border: 1px solid #abc;
     background-color: #fff;
     padding: .75rem;
+    overflow-x: scroll;
 }
 
 /* Footer and Navigation. */
 footer, nav {
     flex: 1;
     flex-basis: 100%;
+}
+
+figcaption {
+    overflow-x: scroll;
 }
 
 /* Sidebar styling. */
