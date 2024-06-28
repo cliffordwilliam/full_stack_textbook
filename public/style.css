@@ -1,14 +1,47 @@
 /* Basic page styling. */
 body {
     font-family: sans-serif;
-    background-color: #eee;
+    background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     max-width: 60rem;
     margin: 0 auto;
     line-height: 1.75;
     tab-size: 4;
-    color: #123;
+    color: #345;
+    font-size: 1rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    color: #345;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+    line-height: 1.25;
+    color: #345;
+}
+
+ul {
+    padding-left: 1.625rem;
+    margin: 1rem 0;
+    color: #345;
+}
+
+li {
+    padding-left: .375rem;
+    margin: .5rem 0;
+    color: #345;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #abc;
 }
 
 button {
@@ -17,19 +50,15 @@ button {
     text-transform: capitalize;
 }
 
+button:enabled {
+    cursor: pointer;
+}
+
 input, select {
     display: block;
     margin-bottom: .75rem;
     padding: .5rem;
     font-size: 1rem;
-}
-
-p {
-    margin-top: 0;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    margin-bottom: 0;
 }
 
 /* Main content area. */
@@ -68,13 +97,20 @@ aside.hidden {
       top: 0;
       bottom: 0;
     }
-  }
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
 
 /* Navbar title. */
 .navbar-title {
     display: block;
-    font-size: 2rem;
-    margin-bottom: .75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-right: auto;
 }
 
 /* Chapter button card. */

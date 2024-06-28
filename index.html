@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Prevent caching for development. -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Full Stack Textbook</title>
     <link rel="stylesheet" href="public/style.css">
     <link rel="stylesheet" href="public/default.css">
     <script src="lib/highlight.min.js"></script>
@@ -13,7 +17,6 @@
     <aside id="aside" class="hidden"></aside>
     <main id="main"></main>
     <footer id="footer"></footer>
-
     <!-- First visit, get ref to roots. -->
     <script>
         const navElement = document.getElementById("nav");
@@ -48,13 +51,6 @@
     <!-- First visit, go to home. -->
     <script>
         navigateTo("home");
-    </script>
-
-    <!-- Prevent caching for development. -->
-    <script>
-        const script = document.createElement('script');
-        script.src = 'https://example.com/script.js?' + new Date().getTime(); // Append timestamp
-        document.head.appendChild(script);
     </script>
 </body>
 </html>

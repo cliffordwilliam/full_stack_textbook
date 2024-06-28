@@ -6,31 +6,41 @@ function detail(chapterId) {
         return;
     }
 
-    const chapterDetailTitle = document.createElement("h1");
-    chapterDetailTitle.textContent = `Ch.${chapter.number}: ${chapter.title}`;
+    const detailPageTitle = document.createElement("h1");
+    detailPageTitle.textContent = `Chapter ${chapter.number}`;
+
+    const chapterDetailTitle = document.createElement("h2");
+    chapterDetailTitle.textContent = chapter.title;
 
     const chapterDetailContent = document.createElement("div");
     chapterDetailContent.innerHTML = chapter.content;
 
-    const goToNextChapter = document.createElement("button");
-    goToNextChapter.textContent = "next chapter"
+    const detailGoToNextChapter = document.createElement("button");
+    detailGoToNextChapter.textContent = "next chapter"
     const totalChapters = chaptersAPI.countByTitle("");
-    goToNextChapter.addEventListener("click", () => navigateTo("detail", Math.min(chapter.id + 1, totalChapters)));
+    detailGoToNextChapter.addEventListener("click", () => navigateTo("detail", Math.min(chapter.id + 1, totalChapters)));
     if (chapter.id === totalChapters) {
-        goToNextChapter.disabled = true;
+        detailGoToNextChapter.disabled = true;
     }
 
-    const goToPrevChapter = document.createElement("button");
-    goToPrevChapter.textContent = "prev chapter"
-    goToPrevChapter.addEventListener("click", () => navigateTo("detail", Math.max(chapter.id - 1, 1)));
+    const detailGoToPrevChapter = document.createElement("button");
+    detailGoToPrevChapter.textContent = "prev chapter"
+    detailGoToPrevChapter.addEventListener("click", () => navigateTo("detail", Math.max(chapter.id - 1, 1)));
     if (chapter.id === 1) {
-        goToPrevChapter.disabled = true;
+        detailGoToPrevChapter.disabled = true;
     }
 
+    const detailGoToHome = document.createElement("button");
+    detailGoToHome.textContent = "go home"
+    detailGoToHome.addEventListener("click", () => navigateTo("home"));
+
+    
+    mainElement.appendChild(detailPageTitle);
     mainElement.appendChild(chapterDetailTitle);
     mainElement.appendChild(chapterDetailContent);
-    mainElement.appendChild(goToPrevChapter);
-    mainElement.appendChild(goToNextChapter);
+    mainElement.appendChild(detailGoToPrevChapter);
+    mainElement.appendChild(detailGoToHome);
+    mainElement.appendChild(detailGoToNextChapter);
 
     // Highlight code snippet.
     hljs.highlightAll();
