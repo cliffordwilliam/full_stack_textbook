@@ -118,14 +118,6 @@ aside.hidden {
     margin-right: auto;
 }
 
-/* Chapter button card. */
-.chapter-button {
-    text-align: left;
-    display: block;
-    width: 100%;
-    text-transform: none
-}
-
 /* Generic card styling. */
 .card {
     border: 1px solid #abc;
