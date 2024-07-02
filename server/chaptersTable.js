@@ -23,7 +23,9 @@ const chaptersTable = [
     <li>Essential development tools.</li>
     <li>Building websites from scratch.</li>
 </ul>
-`
+`,
+        "codeLineHighlights": [
+        ],
     },
     // 2
     {
@@ -365,6 +367,8 @@ const chaptersTable = [
 <h2>2.7 Don’t Believe Anyone Who Tells You Learning To Code Is Easy</h2>
 <h2>2.8 Deliberate Programming Practice</h2>
 `,
+    "codeLineHighlights": [
+    ],
     },
     // 3
     {
@@ -378,9 +382,17 @@ const chaptersTable = [
     <li>asd</li>
     <li>asd</li>
 </ul>
-<pre><code>
-    asd
-</code></pre>`,
+<pre><code>View.OnClickListener listener = new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Log.d(&#x22;TAG&#x22;, &#x22;Clicked!&#x22;);
+    }
+}
+</code></pre>
+`,
+    "codeLineHighlights": [
+        [{start: 3, end: 4, color: 'rgba(255, 255, 255, 0.2)'},],
+    ],
     },
     // 4
     {
@@ -394,8 +406,14 @@ const chaptersTable = [
     <li>asd</li>
     <li>asd</li>
 </ul>
-<pre><code>
-    asd
+<pre><code>View.OnClickListener listener = new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Log.d(&#x22;TAG&#x22;, &#x22;Clicked!&#x22;);
+    }
+};
 </code></pre>`,
+    "codeLineHighlights": [
+    ],
     },
 ];

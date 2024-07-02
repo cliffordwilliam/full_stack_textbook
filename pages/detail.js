@@ -43,5 +43,8 @@ function detail(chapterId) {
     mainElement.appendChild(detailGoToNextChapter);
 
     // Highlight code snippet.
+    hljs.addPlugin(new CopyButtonPlugin());
     hljs.highlightAll();
+    hljs.initLineNumbersOnLoad();
+    hljs.highlightLinesAll(chapter.codeLineHighlights);
 };
