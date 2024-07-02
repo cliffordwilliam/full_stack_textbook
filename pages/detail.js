@@ -7,10 +7,7 @@ function detail(chapterId) {
     }
 
     const detailPageTitle = document.createElement("h1");
-    detailPageTitle.textContent = `Chapter ${chapter.number}`;
-
-    const chapterDetailTitle = document.createElement("h2");
-    chapterDetailTitle.textContent = chapter.title;
+    detailPageTitle.textContent = `Chapter ${chapter.number}: ${chapter.title}`;
 
     const chapterDetailContent = document.createElement("div");
     chapterDetailContent.innerHTML = chapter.content;
@@ -40,7 +37,6 @@ function detail(chapterId) {
     chapterDetailContent.innerHTML = html;
     
     mainElement.appendChild(detailPageTitle);
-    mainElement.appendChild(chapterDetailTitle);
     mainElement.appendChild(chapterDetailContent);
     mainElement.appendChild(detailGoToPrevChapter);
     mainElement.appendChild(detailGoToHome);

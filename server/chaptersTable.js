@@ -1,11 +1,15 @@
 const chaptersTable = [
-    // 1
+    // CH1
     {
         "id": 1,
         "number": 1,
         "title": "What is this textbook?",
         "description": "See what you will get out of this book.",
         "content": `
+## Introduction
+
+Why choose this book? While other beginner resources often focus on specific topics, this book is designed to equip you with real industry knowledge. It will provide you with a comprehensive understanding of the tools and techniques professionals use to build websites in the real world.
+
 This book aims to guide you from zero to becoming a full-stack developer using the best resources available on the internet. Each chapter builds upon the previous one, ensuring you acquire the skills needed to succeed as a web programmer. Your journey towards becoming a proficient full-stack developer begins here. The primary goal of this book is to cultivate a programming mindset and core programming principles. By the end, you will:
 
 - Develop effective problem-solving skills.
@@ -45,13 +49,15 @@ What you'll learn in this book is just the beginning. Each concept covered can b
         [{start: 1, end: 2, },],
     ],
     },
-    // 2
+    // CH2
     {
         "id": 2,
         "number": 2,
         "title": "What is a web developer?",
         "description": "Learn why learning to code is hard and the history of the web.",
         "content": `
+## Introduction
+
 Web development is a career position encompassing a variety of responsibilities, including:
 
 -   **Building and Maintaining Websites — There are 3 Types of Web Developers**:
@@ -123,7 +129,7 @@ Web developers have various career paths to choose from:
 
 ## Motivation
 
-Programming is not for everyone. If you don't enjoy coding, it's best to explore other careers. Pursuing programming solely for a high salary is not advisable. Success in this field requires passion and perseverance, especially when facing challenging problems. If you enjoy the process of coding and solving complex issues, then web development could be a fulfilling career for you.
+Programming is not for everyone. If you don't enjoy coding, it's best to explore other careers. Pursuing programming solely for a high salary is not advisable. Success in this field requires passion and perseverance, especially when facing challenging problems. If you enjoy the process of coding, making things and solving complex issues, then web development could be a fulfilling career for you.
 
 - - -
 
@@ -437,12 +443,56 @@ An excellent web developer adheres to the principle of separation of concerns. T
         [{start: 1, end: 2,}, {start: 4, end: 5,}],
     ],
     },
-    // 3
+    // CH3
     {
         "id": 3,
         "number": 3,
         "title": "Asking for help?",
         "description": "Be better at asking questions.",
+        "content": `
+## Introduction
+
+Asking technical questions requires skill. Poorly formulated questions not only waste your time but also the time of the person you're asking. It's important to be good at asking technical questions to get the most helpful responses and make the process smoother for everyone involved. In this chapter, you will learn how to ask better questions.
+
+## Learning outcomes:
+
+-   Techniques for asking good questions.
+-   Understanding the traits of bad questions and how to avoid them.
+-   Ability to ask clear and productive questions moving forward.
+
+## Provide Context:
+
+Before asking someone for help, put yourself in their shoes. Imagine you have no prior knowledge of the project you're working on. With this perspective, it becomes clear that providing a comprehensive context is crucial. The best way to do this is by offering a step-by-step explanation, starting from the most general aspects and moving towards the specific details.
+
+If your issue requires others to understand the project as a whole, begin by explaining what you are trying to create. Describe your approach, including the data structures or algorithms you've chosen, and how you've organized the project. Continue providing details until you focus on the specific issue at hand.
+
+However, if your problem is isolated and doesn't require a full project overview, simply explain the steps to replicate the issue. Include relevant error messages, the specific line where the execution stops, or the buggy function or line of code.
+
+When asking a question, aim to minimize the number of follow-up questions others will need to ask to understand your context. Prioritize providing clear and detailed context from the start.
+
+## Focus on the issue not your made up solution:
+
+TODO
+
+\`\`\`
+View.OnClickListener listener = new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Log.d("TAG", "Clicked!");
+    }
+}
+\`\`\`
+`,
+    "codeLineHighlights": [
+        [{start: 1, end: 2, },],
+    ],
+    },
+    // CH
+    {
+        "id": 4,
+        "number": 4,
+        "title": "asd?",
+        "description": "asd.",
         "content": `
 ## Test
 This is md
@@ -466,12 +516,12 @@ View.OnClickListener listener = new View.OnClickListener() {
         [{start: 1, end: 2, },],
     ],
     },
-    // 4
+    // CH
     {
-        "id": 4,
-        "number": 4,
-        "title": "Computer basic",
-        "description": "Understand your computer better.",
+        "id": 5,
+        "number": 5,
+        "title": "asd?",
+        "description": "asd.",
         "content": `
 ## Test
 This is md
