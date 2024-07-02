@@ -15,6 +15,9 @@ function sidebar() {
     
     sidebarContainer.appendChild(closeSidebarButton);
 
+    const sidebarLine = document.createElement("hr");
+    sidebarContainer.appendChild(sidebarLine);
+
     buttons.forEach(button => {
         const buttonElement = document.createElement("button");
         buttonElement.textContent = button.name;

@@ -80,6 +80,14 @@ figcaption {
     overflow-x: scroll;
 }
 
+nav {
+    position: sticky; top: 0;
+}
+
+hr {
+    width: 100%;
+}
+
 /* Sidebar styling. */
 .sidebar {
     display: flex;
@@ -94,15 +102,26 @@ aside.hidden {
     display: none;
 }
 
+aside {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
 /* Fixed sidebar for mobile. */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     aside {
       position: fixed;
       left: 0;
+      right: 0;
       top: 0;
       bottom: 0;
     }
-}
+} */
 
 .navbar {
     display: flex;
