@@ -67,7 +67,7 @@ main {
     border: 1px solid #abc;
     background-color: #fff;
     padding: .75rem;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 /* Footer and Navigation. */

@@ -8,12 +8,16 @@ function navigateTo(page, prop) {
             home();
             // Go to top of page.
             window.scrollTo(0, 0);
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
             break;
         case "about":
             setLayout("normal");
             about();
             // Go to top of page.
             window.scrollTo(0, 0);
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
             break;
         case "detail":
             if (typeof prop === 'number') {
@@ -24,6 +28,8 @@ function navigateTo(page, prop) {
             }
             // Go to top of page.
             window.scrollTo(0, 0);
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
             break;
         default:
             console.error(`Unknown page: ${page}`);
