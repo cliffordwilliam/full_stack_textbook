@@ -34,6 +34,10 @@ function detail(chapterId) {
     detailGoToHome.textContent = "go home"
     detailGoToHome.addEventListener("click", () => navigateTo("home"));
 
+    let converter = new showdown.Converter();
+    let text = chapter.content;
+    let html = converter.makeHtml(text);
+    chapterDetailContent.innerHTML = html;
     
     mainElement.appendChild(detailPageTitle);
     mainElement.appendChild(chapterDetailTitle);
