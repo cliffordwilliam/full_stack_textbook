@@ -47,8 +47,11 @@ function detail(chapterId) {
     mainElement.appendChild(detailGoToNextChapter);
 
     // Highlight code snippet.
-    hljs.addPlugin(new CopyButtonPlugin());
     hljs.highlightAll();
     hljs.initLineNumbersOnLoad();
-    hljs.highlightLinesAll(chapter.codeLineHighlights);
+    // Create a new array each time.
+    const newArray = chapter.codeLineHighlights.map(highlightRanges =>
+        highlightRanges.map(range => ({ ...range, color: highlightColor }))
+    );
+    hljs.highlightLinesAll(newArray);
 };

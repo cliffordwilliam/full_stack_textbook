@@ -6,21 +6,44 @@ const chaptersTable = [
         "title": "What is this textbook?",
         "description": "See what you will get out of this book.",
         "content": `
-This book aims to empower you as a full-stack developer with curated resources from the best sources on the internet.
+This book aims to guide you from zero to becoming a full-stack developer using the best resources available on the internet. Each chapter builds upon the previous one, ensuring you acquire the skills needed to succeed as a web programmer. Your journey towards becoming a proficient full-stack developer begins here. The primary goal of this book is to cultivate a programming mindset and core programming principles. By the end, you will:
 
-## What will you learn?
+- Develop effective problem-solving skills.
+- Learn to ask technical questions effectively.
+- Master the art of conducting independent research.
+- Expand your skills beyond courses by using documentation and effective Googling skills.
+- Tools for creating websites.
+- The role and responsibilities of web developers.
+- A solid foundation in web development.
+- Understanding how the web operates.
+- Basics of computer science.
+- Web programming essentials.
+- Workflow for creating and serving websites.
+- Setting up a development environment (Git and GitHub).
+- Front-end technologies (HTML, CSS, JavaScript, React).
+- Back-end technologies.
+- Command-line interface (CLI).
+- Comprehensive understanding of the full-stack workflow.
 
-By the end of this book, you will confidently tackle programming challenges independently. Instead of relying on tutorials, courses, or books, you'll leverage documentation and self-study effectively. You will gain a robust understanding of:
+By the end of this book, you will not only be capable of creating basic websites like single-page applications (SPAs) but also fully hosted applications with a backend server.
 
--   The web.
--   Computer fundamentals.
--   Web programming.
--   Development environments.
--   Essential development tools.
--   Building websites from scratch.
+## Tips for Learning
+
+Memorization followed by application doesn't yield effective results in programming. The best approach is learning by doing. Each concept you learn in this book will be immediately applied to real-world industry scenarios. Repetitive practice will lead to natural memorization. The more you practice, the more information will stick with you, making it harder to forget.
+
+The most effective way to learn programming is by tackling specific problems that require effort to solve. This book presents challenges or puzzles for you to solve independently. You are encouraged to attempt solving them yourself, and if necessary, use Google to find resources (e.g., how to implement a for loop starting from index 1) rather than searching for direct solutions.
+
+## Language Skills
+
+Programming is predominantly conducted in English. From syntax and community interactions to documentation, English proficiency is crucial. If you encounter unfamiliar terms, treat it as an opportunity to practice your Googling skills to understand their meanings or find them in a dictionary. Rather than an obstacle, embrace it as a chance to enhance one of the most critical skills for programmers.
+
+## Conclusion
+
+What you'll learn in this book is just the beginning. Each concept covered can be explored in greater depth. Study independently to refine the skills gained here into a specialized toolkit for web development, opening doors to various career opportunities available to web developers.
 `,
         "codeLineHighlights": [
-        ],
+        [{start: 1, end: 2, },],
+    ],
     },
     // 2
     {
@@ -29,24 +52,25 @@ By the end of this book, you will confidently tackle programming challenges inde
         "title": "What is a web developer?",
         "description": "Learn why learning to code is hard and the history of the web.",
         "content": `
-## Job Description
+Web development is a career position encompassing a variety of responsibilities, including:
 
-This position involves various responsibilities, including:
-
--   **Building and Maintaining Sites**:
+-   **Building and Maintaining Websites — There are 3 Types of Web Developers**:
     -   Front-end development.
     -   Back-end development.
     -   Full-stack development.
--   **Working for Different Clients**:
+  
+-   **Working with Diverse Clients to Bring Their Products and Services Online**:
     -   Technology companies.
     -   Organizations.
     -   Government entities.
--   **Collaborating in a Team Environment**.
+  
+-   **Collaborating in Project-Based Team Environments**.
+  
 -   **Interests and Passion**:
     -   Solving puzzles.
     -   Building and creating things.
     -   Exploring new technologies and tools.
-    -   Understanding how things work.
+    -   Understanding how things around them work.
     -   Passionate about programming.
 
 ## Front-end Development
@@ -60,7 +84,7 @@ Front-end developers are responsible for presenting data visually. They create i
 
 ## Back-end Development
 
-Back-end developers handle data manipulation and server-side logic. They manage user authentication, database interactions, and application logic. Their tools typically include:
+Back-end developers manage data storage, manipulation, and server-side logic to ensure data is served for front-end rendering. They handle user authentication, database interactions, application logic, and more using tools such as:
 
 -   Java
 -   Python
@@ -410,6 +434,7 @@ An excellent web developer adheres to the principle of separation of concerns. T
 ## 2.8 Deliberate Programming Practice
 `,
     "codeLineHighlights": [
+        [{start: 1, end: 2,}, {start: 4, end: 5,}],
     ],
     },
     // 3
@@ -438,7 +463,7 @@ View.OnClickListener listener = new View.OnClickListener() {
 \`\`\`
 `,
     "codeLineHighlights": [
-        [{start: 3, end: 4, color: 'rgba(255, 255, 255, 0.2)'},],
+        [{start: 1, end: 2, },],
     ],
     },
     // 4
@@ -467,6 +492,7 @@ View.OnClickListener listener = new View.OnClickListener() {
 \`\`\`
 `,
     "codeLineHighlights": [
+        [{start: 1, end: 2,}, {start: 4, end: 5,}],
     ],
     },
 ];

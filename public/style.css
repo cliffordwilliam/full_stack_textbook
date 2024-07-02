@@ -64,7 +64,6 @@ input, select {
 /* Main content area. */
 main {
     flex: 1;
-    border: 1px solid #abc;
     background-color: #fff;
     padding: .75rem;
     overflow-x: auto;
@@ -82,6 +81,9 @@ figcaption {
 
 nav {
     position: sticky; top: 0;
+    background-color: #fff;
+    padding: .75rem;
+    border-bottom: 1px solid #abc;
 }
 
 hr {
@@ -95,6 +97,8 @@ hr {
     height: 100%;
     box-sizing: border-box;
     overflow-y: auto;
+    background-color: #fff;
+    padding: .75rem;
 }
 
 /* Hide sidebar when hidden class is applied. */
@@ -139,7 +143,7 @@ aside {
 
 /* Generic card styling. */
 .card {
-    border: 1px solid #abc;
+    border-top: 1px solid #abc;
     background-color: #fff;
     padding: .75rem;
 }

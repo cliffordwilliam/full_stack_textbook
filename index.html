@@ -12,6 +12,9 @@
     <script src="lib/highlightjs-highlight-lines.js"></script>
     <script src="lib/highlightjs-line-numbers.min.js"></script>
     <script src="lib/showdown.min.js"></script>
+    <script>
+        hljs.addPlugin(new CopyButtonPlugin());
+    </script>
 </head>
 <body>
     <nav id="nav"></nav>
@@ -24,6 +27,10 @@
         const mainElement = document.getElementById("main");
         const asideElement = document.getElementById("aside");
         const footerElement = document.getElementById("footer");
+
+        // For line highlights, it is immutable.
+        const lineHighlights = [];
+        const highlightColor = 'rgba(255, 255, 255, 0.2)';
     </script>
 
     <!-- Back-end. -->

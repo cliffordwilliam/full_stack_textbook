@@ -5,7 +5,7 @@ function sidebar() {
     ];
 
     const sidebarContainer = document.createElement("div");
-    sidebarContainer.className = "sidebar card";
+    sidebarContainer.className = "sidebar";
 
     const closeSidebarButton = document.createElement("button");
     closeSidebarButton.textContent = "close sidebar";

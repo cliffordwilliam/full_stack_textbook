@@ -1,7 +1,7 @@
 function navbar() {
 
     const navbarContainer = document.createElement("div");
-    navbarContainer.className = "navbar card";
+    navbarContainer.className = "navbar";
 
     const navbarTitle = document.createElement("span");
     navbarTitle.textContent = "Full stack textbook";
