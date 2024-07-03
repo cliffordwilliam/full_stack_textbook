@@ -116,16 +116,20 @@ aside {
     margin: 0 auto;
 }
 
-/* Fixed sidebar for mobile. */
-/* @media only screen and (max-width: 600px) {
-    aside {
-      position: fixed;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-    }
-} */
+blockquote {
+    border-left: 10px solid #345;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: monospace;
+}
+
+pre {
+    overflow-x: scroll;
+}
+
+blockquote p {
+    margin-bottom: 0;
+}
 
 .navbar {
     display: flex;

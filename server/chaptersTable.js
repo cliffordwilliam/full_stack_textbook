@@ -46,7 +46,6 @@ Programming is predominantly conducted in English. From syntax and community int
 What you'll learn in this book is just the beginning. Each concept covered can be explored in greater depth. Study independently to refine the skills gained here into a specialized toolkit for web development, opening doors to various career opportunities available to web developers.
 `,
         "codeLineHighlights": [
-        [{start: 1, end: 2, },],
     ],
     },
     // CH2
@@ -133,7 +132,9 @@ Programming is not for everyone. If you don't enjoy coding, it's best to explore
 
 - - -
 
-## 2.1 Why Learning to Code is Hard
+## Why Learning to Code is Hard
+
+<a href="https://web.archive.org/web/20230630111131/https://www.thinkful.com/blog/why-learning-to-code-is-so-damn-hard/" target="_blank" rel="noopener noreferrer">Reference</a>
 
 The journey ahead is challenging due to several factors:
 
@@ -162,10 +163,10 @@ During this phase, experiment with various courses until you find one that reson
 
 ## Phase II: The Cliff of Confusion
 
-At this stage, you attempt to build projects independently but struggle because:
+At this stage, you attempt to build projects independently, but you encounter numerous bugs, and your online searches often yield barely functional solutions. You will escape this phase once you successfully complete a few projects. You struggle because:
 
--   **Resource Density**: Intermediate resources are sparse. You'll often rely on industry blogs and documentation that might be difficult to understand.
--   **Scope of Knowledge**: You need to learn a lot before the big picture becomes clear. Even within web development, the field is vast, making it hard to choose a specific path.
+- **Resource Density**: Intermediate resources are sparse from Phase 2 until Phase 3. Resources increase again in Phase 4, but most of them consist of industry blogs and documentation that may be difficult to understand.
+- **Scope of Knowledge**: You need to learn a lot before the big picture becomes clear. In Phases 2 and 3, there are no correct answers; each solution depends on context. In Phase 1, the scope of knowledge is narrow, focusing on the fundamentals everyone needs to know.
 
 ### Tips
 
@@ -206,7 +207,7 @@ To land a job and continue improving:
 
 - - -
 
-## 2.2 Web Design: Entry and History
+## Web Design: Entry and History
 
 Web design today primarily refers to front-end development, though it once encompassed the entire process, including:
 
@@ -355,7 +356,9 @@ Creating a website typically involves several roles:
 
 - - -
 
-## 2.3 How Can I Become a Really Good Web Developer?
+## How Can I Become a Really Good Web Developer?
+
+<a href="http://www.quora.com/Computer-Programming/How-can-I-become-a-really-good-Web-Developer-starting-from-now-at-age-20-before-age-25" target="_blank" rel="noopener noreferrer">Reference</a>
 
 ### Do not Get into Development for the Wrong Reasons
 
@@ -401,7 +404,9 @@ Regularly code for fun and re-create existing projects to sharpen your skills. C
 
 - - -
 
-## 2.4 What Makes an Excellent Web Developer?
+## What Makes an Excellent Web Developer?
+
+<a href="http://www.quora.com/What-makes-a-great-web-developer" target="_blank" rel="noopener noreferrer">Reference</a>
 
 ### The Hacker Mindset
 
@@ -429,18 +434,39 @@ An excellent web developer adheres to the principle of separation of concerns. T
 
 - - -
 
+## What Makes A Good Developer?
+
+<a href="https://web.archive.org/web/20230630111131/https://www.thinkful.com/blog/why-learning-to-code-is-so-damn-hard/" target="_blank" rel="noopener noreferrer">Reference</a>
+
+Excitement is what any web developer recruiter is looking for, from junior to senior applicants. However, this excitement manifests differently at each career stage.
+
+### Good Junior Developers
+
+The key characteristic of a good junior developer is their excitement for creating things like websites and desktop apps. They are thrilled by the ability to build and interact with their creations. They enjoy problem-solving and devising effective solutions. Good junior developers have a strong desire to learn and create new things, finding excitement in every new skill they acquire.
+
+A small subset of exceptional junior developers may be drawn to more complex tasks, such as building programming languages or databases. Regardless of their specific interests, excited junior developers bring valuable energy to any team.
+
+### Good Mid-Level Developers
+
+Good mid-level developers have a broader range of interests, due to their exposure to common tasks and their desire to tackle new challenges. They apply familiar libraries in novel ways and focus on solving business problems rather than merely writing code. These developers see the bigger picture and strive to address issues holistically.
+
+However, mid-level developers can sometimes overdo things. For instance, they might insist on using Test-Driven Development (TDD) for everything, whereas junior developers may not even be familiar with the concept.
+
+### Good Senior Developers
+
+Senior developers provide direction, stability, and experience. They can identify potential pitfalls before they occur, having navigated similar challenges in the past. Seniors contribute significantly to finding solutions, understanding systems, and aligning them with overall goals.
+
+They mentor junior developers, helping them learn new skills, and ensure that mid-level developers do not overcomplicate the codebase. Senior developers know what tools and approaches are effective, recognizing when a solution is unsuitable and when to seek alternatives.
+
 ## TODO
 
-## 2.5 What Makes A Good Developer?
+## Things I Wish Someone Had Told Me When I Was Learning How to Code
 
-## 2.6 Things I Wish Someone Had Told Me When I Was Learning How to Code
+## Do not Believe Anyone Who Tells You Learning To Code Is Easy
 
-## 2.7 Don’t Believe Anyone Who Tells You Learning To Code Is Easy
-
-## 2.8 Deliberate Programming Practice
+## Deliberate Programming Practice
 `,
     "codeLineHighlights": [
-        [{start: 1, end: 2,}, {start: 4, end: 5,}],
     ],
     },
     // CH3
@@ -452,68 +478,198 @@ An excellent web developer adheres to the principle of separation of concerns. T
         "content": `
 ## Introduction
 
-Asking technical questions requires skill. Poorly formulated questions not only waste your time but also the time of the person you're asking. It's important to be good at asking technical questions to get the most helpful responses and make the process smoother for everyone involved. In this chapter, you will learn how to ask better questions.
+Asking technical questions effectively is a skill that can save time and effort for both you and the person you're asking. Well-formulated questions lead to clearer, more helpful responses and make the process smoother for everyone involved. In this chapter, you will learn how to ask better questions.
 
-## Learning outcomes:
+## Learning Outcomes
 
--   Techniques for asking good questions.
--   Understanding the traits of bad questions and how to avoid them.
--   Ability to ask clear and productive questions moving forward.
+- Techniques for asking good questions.
+- Understanding the traits of bad questions and how to avoid them.
+- Ability to ask clear and productive questions moving forward.
 
-## Provide Context:
+## Provide Context
 
-Before asking someone for help, put yourself in their shoes. Imagine you have no prior knowledge of the project you're working on. With this perspective, it becomes clear that providing a comprehensive context is crucial. The best way to do this is by offering a step-by-step explanation, starting from the most general aspects and moving towards the specific details.
+Provide as much context as possible, such as error messages, terminal outputs, and specific lines or functions in your code. Lack of context makes it difficult for others to help you and often results in back-and-forth questions for more information, which can be frustrating for both parties.
 
-If your issue requires others to understand the project as a whole, begin by explaining what you are trying to create. Describe your approach, including the data structures or algorithms you've chosen, and how you've organized the project. Continue providing details until you focus on the specific issue at hand.
+When you include detailed context, you minimize the chances of receiving an incorrect or incomplete answer. Here is an example of how to provide context effectively:
 
-However, if your problem is isolated and doesn't require a full project overview, simply explain the steps to replicate the issue. Include relevant error messages, the specific line where the execution stops, or the buggy function or line of code.
+> "I'm trying to return a string from this function, but I keep getting a syntax error. I checked its data type, and it is a string. Here is my code and the pseudocode I used."
 
-When asking a question, aim to minimize the number of follow-up questions others will need to ask to understand your context. Prioritize providing clear and detailed context from the start.
+Providing your attempted solutions helps others understand what you have already tried, preventing them from suggesting redundant steps. Pseudocode can also quickly convey your approach, allowing others to point out issues or suggest better strategies without delving deeply into your actual code.
 
-## Focus on the issue not your made up solution:
+## Ask for Directions
 
-TODO
+Instead of asking vague questions like "How do I get my code to work?", describe your problem and your attempts to solve it. This demonstrates your effort and helps others provide more specific guidance. For example:
 
+> "I'm trying to return a string from this function, but I'm getting a syntax error. I have checked its data type, and it is a string. Here is my code and the pseudocode I used. What could be causing this error?"
+
+When you encounter obstacles, explain what you have done and ask for guidance on what to try next. Avoid immediate follow-up questions until you have researched the initial advice. However, do ask further questions if you get stuck again.
+
+Do not underestimate your questions as being trivial. Details you find insignificant might be crucial to solving the problem. Always include all relevant information.
+
+## Do Not Ask to Just Ask
+
+Avoid questions like:
+
+> "Any Java experts around?"
+
+Such questions are unhelpful because they do not provide context and might imply doubts about others' expertise. Instead, focus on formulating your actual question with sufficient detail.
+
+Effortless questions tend to receive less effort in responses. Detailed, context-rich questions attract more interest and higher-quality answers.
+
+## The XY Problem
+
+The XY problem occurs when you ask about your attempted solution (Y) rather than the actual problem (X). This often leads to wasted time and effort because Y might not be the best approach to solving X.
+
+To avoid the XY problem:
+
+- Share the bigger picture along with your attempted solutions.
+- Provide as much context as possible.
+
+### Example 1
+
+
+\`\`\`plaintext
+<bob> How can I echo the last three characters in a filename?
+<feline> If they're in a variable: echo \${foo: -3}
+<feline> Why 3 characters? What do you REALLY want?
+<feline> Do you want the extension?
+<bob> Yes.
+<feline> There's no guarantee that every filename will have a three-letter extension,
+<feline> so blindly grabbing three characters does not solve the problem.
+<feline> echo \${foo##*.}
 \`\`\`
-View.OnClickListener listener = new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Log.d("TAG", "Clicked!");
-    }
-}
+
+### Example 2
+
+
+\`\`\`plaintext
+<Angela> 'nmap -O -A 127.0.0.1' returns some lines starting with 'OS:'. How to change it?
+<Obama> Look in the source code for nmap, find how it figures out the Linux part, then rewrite your TCP/IP stack to not operate in a way nmap can detect.
+<Angela> Yeah, but I don't know about the Linux system API at all.
+<Obama> Well, nmap's fingerprint is based on the way the TCP/IP stack works, there's no real way except to rewrite the appropriate parts of said stack.
+<Angela> I really need to avoid these messages. Can iptables do this work?
+<Obama> Well, don't use OS detection or version scanning.
+<Angela> I want to prevent others from knowing the type of my OS.
 \`\`\`
+
+In both examples, the initial questions focused on specific solutions (Y) rather than the underlying problems (X). By understanding and addressing the root problem, you can find more effective and efficient solutions.
+
+By applying these principles, you can ask better technical questions, leading to faster and more accurate solutions.
 `,
     "codeLineHighlights": [
-        [{start: 1, end: 2, },],
     ],
     },
-    // CH
+    // CH 4
     {
         "id": 4,
         "number": 4,
-        "title": "asd?",
-        "description": "asd.",
+        "title": "Computer Basics",
+        "description": "Get up to speed with computer basics",
         "content": `
-## Test
-This is md
+## Introduction
 
-## Another one
-This is another one
+Computers are the primary tools that web developers use. Without them, web development would be impossible. Therefore, it's essential to have a solid understanding of computer basics.
 
-- List
-- List again
+## Learning Outcomes
 
-\`\`\`
-View.OnClickListener listener = new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Log.d("TAG", "Clicked!");
-    }
-}
-\`\`\`
+- Understanding software and hardware.
+- Taking screenshots.
+- Creating strong passwords.
+
+The following lessons are sourced from Goodwill Community Foundation (GCF) resources. You can explore these resources further for a more in-depth understanding.
+
+## What is a Computer?
+
+A computer is an electronic device that can store, retrieve, and process information. At its core, this information is represented by the smallest building blocks: 0s and 1s, known as bits. Modern computers can store vast combinations of these bits to represent any kind of information, from the background image on your screen to the way your music is stored.
+
+Every visual element you see on the screen and every action you perform, such as clicking an icon, are all stored and processed as combinations of 0s and 1s. These bits are grouped into bytes, which represent more complex data.
+
+This ability to store, retrieve, and process information allows computers to perform a wide range of tasks like typing office documents, sending emails, playing games, and browsing the web.
+
+In essence, a computer is a versatile tool that uses combinations of 0s and 1s to perform a wide range of functions, making it indispensable for web development and many other fields.
+
+## Hardware vs. Software
+
+All computers are composed of both hardware and software components.
+
+### Hardware
+
+Hardware includes all the physical parts of a computer:
+
+- **Keyboard**: An input device used to type text and interact with the computer.
+- **Mouse**: An input device used to point, click, and interact with the graphical user interface.
+- **Internal Components**: Includes the central processing unit (CPU), memory (RAM), storage devices (hard drives, SSDs), motherboard, and other internal circuitry.
+
+### Software
+
+Software refers to the sets of instructions (encoded in 0s and 1s) that tell the computer how to perform tasks:
+
+- **Web Browsers**: Applications like Chrome, Firefox, and Safari used to access and navigate the internet.
+- **Games**: Software designed for entertainment, ranging from simple puzzles to complex simulations.
+- **Rich Text Word Processors**: Applications like Microsoft Word or Google Docs used for creating and editing text documents.
+
+Every interaction you have with a computer involves both hardware and software. For example, as you read this text, you are using web browser software, and you are likely using hardware like a mouse or keyboard to navigate through the pages.
+
+It's important to note that different types of computers come with different sets of hardware and software. For instance, a desktop computer may have a different set of hardware components compared to a laptop or a smartphone, and they may run different types of software tailored to their specific hardware capabilities.
+
+Understanding the distinction between hardware and software and how they work together is fundamental to mastering computer basics.
+
+## What are the Different Types of Computers?
+
+While the term "computer" often refers to desktops or laptops, many other devices also fall into this category. ATM machines, grocery scanners, and calculators are all examples of computers.
+
+### Desktop Computers
+
+Desktop computers are designed to be placed on a desk and typically consist of:
+
+- Computer case
+- Monitor
+- Keyboard
+- Mouse
+
+### Laptop Computers
+
+Laptops are similar to desktop computers but are compact and portable, with the computer case, monitor, keyboard, and mouse pad integrated into one unit. Laptops run on batteries, whereas desktop computers need to be plugged into a power socket.
+
+### Tablet Computers
+
+Tablets are portable devices similar to laptops but with a touch-sensitive screen instead of a built-in mouse pad.
+
+### Servers
+
+Servers are specialized computers designed to serve information to other computers in a network. This network can be internal (e.g., within a company) or global (e.g., the internet).
+
+### Specialized Computers
+
+Some computers do not fit into the traditional categories of desktops or laptops. Here are a few examples of specialized computers:
+
+- Smartphones
+- Wearables
+- Game consoles
+- Smart TVs
+
+These devices are also considered computers because they store, process, and serve data like any other computer.
+
+## PCs and Macs
+
+Among the many types of computers, two of the most common are:
+
+- PC
+- Mac
+
+### PC
+
+The term "PC" began with the original IBM PC introduced in 1981. Other companies started making similar devices, known as IBM PC compatibles or simply PCs. PCs are the most common type of computer and typically come with the Windows operating system pre-installed.
+
+### Mac
+
+The Macintosh computer, introduced in 1984, was the first widely sold computer with a graphical user interface (GUI). All Macs are made by Apple and usually come with macOS
+
+## What is an operating system?
+
+TODO
 `,
     "codeLineHighlights": [
-        [{start: 1, end: 2, },],
     ],
     },
     // CH
